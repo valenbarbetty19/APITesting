@@ -17,8 +17,6 @@ public class RequestBuilder {
                 .filter(new RequestLoggingFilter())
                 .filter(new ResponseLoggingFilter());
 
-
-
         return requestSpecification.get(path);
     }
 
