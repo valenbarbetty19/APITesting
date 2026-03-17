@@ -9,7 +9,9 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class AvailablePetsTest extends TestRunner {
-    @Test
+
+    //Este test valida que el endpoint GET lista de mascotas disponible funcione correctamente
+    @Test(testName = "Validate list of available pets")
     public void listAvailablePets(){
         Response response = RequestBuilder.getRequest(
                 getBaseurl(),

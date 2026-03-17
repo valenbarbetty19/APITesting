@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
 
 public class CreateUserTest extends TestRunner {
+
+    //Verifica que un usuario se cree de manera correcta - Flujo: 1. Crea un usuario 2. Manda el POST request al endpoint especificado 3. Valida que la respuesta sea 200
     @Test(testName = "Validate user creation")
     public void createUserTest(){
         CreateUserDTO createUserDTO = CreateUserDTO.builder()
